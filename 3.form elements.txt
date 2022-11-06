@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>FORM and Form Elements</title>
+<script>
+function formdata(ja)
+{
+document.write("Your Name :"+ja.username.value+"</br>");
+document.write("Your Email id : "+ja.email.value+"</br>" );
+document.write("Your Address :"+ja.address.value+"</br>");
+document.write("Your Gender:"+ja.gender.value+"</br>");
+document.write("Languages known : ");
+for( var i in ja.language)
+{if (ja.language[i].checked)
+{document.write(ja.language[i].value+",");
+}
+}document.write("</br>");
+document.write("Course completed :"+ja.course.value+" </br>");
+document.write("Resume file :"+ja.Resume.value+"</br> ");
+}
+</script>
+</head>
+<body>
+<form name="jobapp">
+<label>Name: </label>
+<input type="text" name="username" value=""size="25" maxlength="50"/>
+<label>Email id:</label>
+<input type="text" name="email" value="">
+<br/>
+<label>address: </label>
+<textarea name="address" rows="6" cols="25">please enter your address</textarea>
+<br/>
+<label>Gender: </label>
+<label><input type="radio" name="gender" value="Male"/>Male</label><br/>
+<label><input type="radio" name="gender" value="Female"/>Female</label><br/>
+<br/>
+<label>What are the Languages you can speak </label>
+<label><input type="checkbox" name="language" value="Hindi"/>Hindi</label><br/>
+<label><input type="checkbox" name="language" value="Tamil"/>Tamil</label><br/>
+<label><input type="checkbox" name="language" value="Telugu"/>Telugu</label><br/>
+<label><input type="checkbox" name="language" value="Kannada"/>Kan nada</label><br/>
+<label><input type="checkbox" name="language" value="Malayalam"/>Malayalam</label><br/>
+<br/>
+<label> Your Qualification </label>
+<select name="course">
+<option selected="selected" value=" ">select course</option>
+<option value="BCA">BCA</option>
+<option value="BCom">BCom</option>
+<option value="BBA">BBA</option>
+<option value="BSc">BSc</option>
+<option value="BA">BA</option>
+<option value="MCA">MCA</option>
+<option value="MCom">MComs</option>
+<option value="MBA">MBA</option>
+<option value="MSc">MSc</option>
+<option value="MA"> MA</option>
+</select>
+<br/>
+<label>Resume Upload</label>
+<input type="file" name="Resume"/>
+<input type="submit" name="submit" value="Submit" onclick="formdata(jobapp)"/>
+<input type="reset" name="reset" value="Reset" />
+</body>
+</html>

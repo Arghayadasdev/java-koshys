@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC"//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transtional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<title>Case Conversion </title>
+<head>
+<script type="text/javascript">
+    function toUpper(){
+        document.getElementById("name").value=document.getElementById("name").value.toUpperCase();
+    }
+
+    function toLower(){
+        document.getElementById("name").value=document.getElementById("name").value.toLowerCase();
+
+    }
+    </script>
+</head>
+<body bgcolor="green"text="black">
+    <center><h1>CASE CONVERSION</h1></center>
+    <hr/>
+    <form>
+        <h1>Enter  Your Name :<input type="text" id="name"size="50"/></h1><br/><br/>
+        <input type="button"value="Convert to Upper"onclick="toUpper()"/>
+        <input type="button" value="Convert to lower"onclick="toLower()"/>
+    </form></body></html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Mouse Pointer</title>
+    <script type="text/javascript">
+         function  findMousePostion(evt){
+            document.getElementById("showXY").value=
+            "ClientX="+evt.clientX+
+            "ClientY="+evt.clientY+
+            "Screen X="+evt.screenX+
+            "Screen Y="+evt.screenY;
+         }
+         </script>
+</head>
+<body onmousemove="findMousePostion(event)">
+    <form>
+        Mouse Postion are:<input type="text"id="showXY"size="50"/>
+    </form>
+</body>
+</html>

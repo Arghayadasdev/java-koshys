@@ -1,0 +1,79 @@
+ 
+<html>
+<head>
+<title>
+BCA Program for LISTS
+</title>
+</head>
+<body bgcolor="green" text="white">
+<center><h1> Syllabus of BCA Semester Wise </h1></center>
+<hr/>
+<ol type="A">
+<font face="helvetica" size="4" color="yellow">
+<li>Semesterl </li>
+<ul type="disc">
+<li> English </li>
+<li> Language </li>
+<li> C Programming </li>
+<li> Digital Electronics </li>
+<li> Discrete Mathematics </li>
+<li> C Programming Lab </li>
+<li> DE Lab </Ii>
+</ul>
+</font>
+<font face="Arial" size="3" color="pink">
+<li> Semester </li>
+<ul type="square">
+<li> English </li>
+<li> Language </li>
+<li> DBMS </li>
+<li> Data structures </li>
+<li> Numerical and statistics methods</li>
+<li> DBMS LAb</li>
+<li> Data Structures Lab</Ii>
+</ul>
+</font>
+<li> Semester lll </li>
+<ul type="circle">
+<li> English </li>
+<li> Language </li>
+<li> A/CPackage </li>
+<li> Operating Systems </li>
+<li> OOPS using C++</li>
+<li> A/C Package LAb</li>
+<li> OOPS using C++ Lab</li>
+</ul>
+<fontface="lucida handwriting" size="4" color="red">
+<li> Semester IV</li>
+<ol type="i">
+<li> English </li>
+<li> Language </li>
+<li> Visual Programming </li>
+<li> Unix Programming </li>
+<li> Operational Research</li>
+<li> Visual Programming Lab</li>
+<li> Unix Programming Lab</li>
+</ol>
+</font>
+<li>SemesterV</li>
+<ul >
+<li> Data Communication Networks </li>
+<li> Software Engineering </li>
+<li> Computer Architecture </li>
+<li> Java Programming</li>
+<li> Assembly Language Programming</li>
+<li> Java Programming Lab</li>
+<li> Assembly Lanaguage Programming Lab</li>
+<li> Project Lab</li>
+</ul>
+<li> Semester VI</li>
+<ul ><li> Cryptography and Network Security</li>
+<li> Theory of Computation</Ii>
+<li> Web Programming</li>
+<li> System Programming</li>
+<li> web programming Lab</li>
+<li> Project Lab</Ii>
+</ul>
+<ol>
+</body>
+</html>
