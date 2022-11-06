@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8589-1"?>
+<!DOCTYPE html PUBLIC"-//W3C//DTDXHTML 1.0 Transional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <title>Sum of natural numbers</title>
+    <script type="text/javascript">
+        function sum() {
+            var num = window.prompt("Enter the value of N: ");
+            var n = parseInt(num);
+            var sum = (n * (n + 1)) / 2;
+            window.alert(`The sum of first ${n} natural numbers is ${sum}`);
+            // window.alert("The sum of first " + n + " natural numbers is: " + sum);
+        }
+    </script>
+</head>
+
+<body bgcolor="darkblue" text="white">
+    <h1 align="center">Sum of natural numbers</h1>
+    <hr>
+    <center>
+        <form>
+            <input type="button" value="Find sum of natural numbers" onclick="sum()">
+        </form>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8589-1"?>
+<!DOCTYPE html PUBLIC"-//W3C//DTDXHTML 1.0 Transional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <title>Emplyee Salary Details</title>
+    <script>
+        function showSalary() {
+            var empname = document.getElementById("empname").value;
+            var empno = document.getElementById("empno").value;
+            var basic = parseInt(document.getElementById("basic").value);
+
+            // HRA is 40% of Basic
+            var hra = basic * 0.4;
+
+            // DA is 60% of BAsic
+            var da = basic * 0.6;
+
+            var gross = basic + hra + da;
+
+            // PF is 13% of gross
+            var pf = gross * 0.13;
+
+            // Tax is 20% of gross
+            var tax = gross * 0.2;
+
+            var deductions = pf + tax;
+            var netsalary = gross - deductions;
+
+            document.writeln("<table border='5' bgcolor='lightgreen' >");
+            document.writeln("<tr><td colspan='2' align='center'>Employee Salary Breakup Details</td></tr>");
+            document.writeln("<tr><td>Employee Name: </td> <td>" + empname + "</td> </tr>");
+            document.writeln("<tr><td>Employee No.: </td> <td>" + empno + "</td> </tr>");
+            document.writeln("<tr><td>Basic salary: </td> <td>" + basic + "</td> </tr>");
+            document.writeln("<tr><td>HRA (40% of Basic): </td> <td>" + hra + "</td> </tr>");
+            document.writeln("<tr><td>DA (60% of Basic): </td> <td>" + da + "</td> </tr>");
+            document.writeln("<tr><td>Gross Salary: </td> <td>" + gross + "</td> </tr>");
+            document.writeln("<tr><td>PF (13% of gross): </td> <td>" + pf + "</td> </tr>");
+            document.writeln("<tr><td>Tax: </td> <td>" + tax + "</td> </tr>");
+            document.writeln("<tr><td>Deductions (PF+Tax): </td> <td>" + deductions + "</td> </tr>");
+            document.writeln("<tr><td>Net salary: </td> <td>" + netsalary + "</td> </tr>");
+            document.writeln("</table>");
+        }
+    </script>
+</head>
+
+<body bgcolor="darkblue" text="white">
+    <form>
+        <table border="5">
+            <tr>
+                <td colspan="2" align="center">
+                    Employee Details
+                </td>
+            </tr>
+            <tr>
+                <td>Employee name: </td>
+                <td><input type="text" id="empname"></td>
+            </tr>
+            <tr>
+                <td>Employee Number: </td>
+                <td><input type="text" id="empno"></td>
+            </tr>
+            <tr>
+                <td>Basic pay: </td>
+                <td><input type="text" id="basic"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="button" value="Show salary details" onclick="showSalary()">
+    </form>
+</body>
+
+</html>

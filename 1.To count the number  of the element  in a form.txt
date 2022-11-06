@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="IS0-8859-1"?>
+
+<IDOCTYPE html PUBLIC"-//W3C//DTDXHTML 1.0
+Transitional //EN""http://www.w3.org/TR/xhtm|1/DTD/xhtml1-transitional .dtd">
+
+<html xmlns="http://www.w3.0rg/1999/xhtml">
+<head>
+
+<title>Count From Elements</title>
+
+<script type="text/javascript">
+
+function countFormElements(){
+alert("The number of form elements are:"+document.myForm.length);
+
+}
+
+</script>
+
+</head>
+<body bgcolor="darkblue" text="white">
+
+<h1 align=center>Counting Form Elements </h1>
+<hr>
+
+<form name="myForm" align="left">
+<b>Name:</b>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text"/><br/><br/>
+
+<b>Password:</b><input type="password"/><br/><br/>
+<b>Address:</b>
+<textarea id="emailBody" cols="50" rows="10"></textarea><br/><br/>
+
+<b>sex: </b>&nbsp&nbsp&nbsp<input type="radio" name="gender"/>Male
+<input type="radio" name="gender"/>Female<br/><br/>
+<b>Newsletter:</b><input type="checkbox" checked="checked"/><br/><br/>
+<input type="button" value="Send message" onclick="countFormElements()"/>
+</form>
+</body>
+</html>

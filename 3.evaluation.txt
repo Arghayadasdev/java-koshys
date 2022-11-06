@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8589-1"?>
+<!DOCTYPE html PUBLIC"-//W3C//DTDXHTML 1.0 Transional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <title>Expression Evaluation</title>
+    <script type="text/javascript">
+        function evl() {
+            var enteredExpr = document.getElementById("expr").value;
+            document.getElementById("result").value = eval(enteredExpr);
+        }
+    </script>
+</head>
+
+<body bgcolor="darkblue" text="white">
+    <h1 align="center">Evaluating Mathematical Expression</h1>
+    <hr>
+    <form name="myForm">
+        <b>Enter any valid expression: </b> <input type="text" id="expr"> <br><br>
+        <input type="button" value="Evaluate" onclick="evl()"> <br><br>
+        <b>Result of the expression: </b> <input type="text" id="result">
+    </form>
+</body>
+
+</html>

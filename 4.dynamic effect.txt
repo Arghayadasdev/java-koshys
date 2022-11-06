@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8589-1"?>
+<!DOCTYPE html PUBLIC"-//W3C//DTDXHTML 1.0 Transional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <title>Basic animation</title>
+    <style type="text/css">
+        #layer1 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        #layer2 {
+            position: absolute;
+            top: 50px;
+            left: 150px;
+        }
+
+        #layer3 {
+            position: absolute;
+            top: 50px;
+            left: 250px;
+        }
+    </style>
+    <script type="text/javascript">
+        function moveImage(layer) {
+            var top = window.prompt("Enter top value");
+            var left = window.prompt("Enter left value");
+            document.getElementById(layer).style.top = top + "px";
+            document.getElementById(layer).style.left = left + "px";
+        }
+    </script>
+</head>
+
+<body bgcolor="darkblue" text="white">
+    <div id="layer1">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+            onclick="moveImage('layer1')">
+    </div>
+    <div id="layer2">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+            onclick="moveImage('layer2')">
+    </div>
+    <div id="layer3">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+            onclick="moveImage('layer3')">
+    </div>
+</body>
+
+</html>
